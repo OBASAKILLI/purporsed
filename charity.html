@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity & Community | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background-image: url('pillar_charity.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(5, 6, 15, 0.7);
+        }
+        .page-hero .container { position: relative; z-index: 1; }
+        .section-padding { padding: 8rem 0; }
+        .charity-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .initiative-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            padding: 2.5rem;
+            border-radius: 24px;
+            transition: transform 0.3s ease;
+        }
+        .initiative-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+        }
+        .cta-box {
+            background: var(--emerald-gradient);
+            padding: 4rem;
+            border-radius: 32px;
+            text-align: center;
+            margin-top: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="hero-badge fade-in">Humanitarian Aid</div>
+            <h1 class="hero-title fade-in">Compassion in <span class="text-gradient">Action.</span></h1>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+                <h2 class="section-title">Direct <span>Impact</span></h2>
+                <p>Our charity initiatives are designed to address immediate needs while building long-term resilience. We focus on areas where our research indicates the highest potential for sustainable growth.</p>
+            </div>
+
+            <div class="charity-grid">
+                <div class="initiative-card reveal">
+                    <div class="card-icon" style="color: var(--secondary);"><i class="fas fa-faucet"></i></div>
+                    <h3>Clean Water Access</h3>
+                    <p>Installing solar-powered water filtration systems in remote villages, providing clean drinking water to over 500,000 people annually.</p>
+                </div>
+                <div class="initiative-card reveal" style="animation-delay: 0.1s">
+                    <div class="card-icon" style="color: var(--secondary);"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Healthcare Reach</h3>
+                    <p>Mobile clinics and vaccination drives targeting underserved regions, ensuring no community is left behind in basic health services.</p>
+                </div>
+                <div class="initiative-card reveal" style="animation-delay: 0.2s">
+                    <div class="card-icon" style="color: var(--secondary);"><i class="fas fa-seedling"></i></div>
+                    <h3>Sustainable Farming</h3>
+                    <p>Empowering local farmers with modern irrigation technology and organic seeds to ensure food security and economic independence.</p>
+                </div>
+            </div>
+
+            <div class="cta-box reveal">
+                <h2 style="color: white; margin-bottom: 1.5rem;">Be the Change You Want to See</h2>
+                <p style="color: rgba(255,255,255,0.9); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Your support allows us to expand our reach and implement life-changing programs where they are needed most.</p>
+                <a href="#" class="btn btn-outline" style="background: white; color: var(--secondary);">Make a Donation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="charity.html">Charity</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our monthly impact report.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

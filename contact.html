@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-hero {
+            padding: 10rem 0 5rem;
+            background: var(--dark-gradient);
+            text-align: center;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+        .contact-info-panel {
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 32px;
+        }
+        .contact-method {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .form-group.full { grid-column: span 2; }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            color: white;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-hero">
+        <div class="container">
+            <span class="hero-badge">Get in Touch</span>
+            <h1 class="hero-title">Let's Connect for <span class="text-gradient">Impact.</span></h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-panel reveal">
+                    <h3 style="margin-bottom: 2rem;">Global Headquarters</h3>
+                    <div class="contact-method">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 style="font-size: 0.9rem;">Address</h4>
+                            <p style="color: var(--text-muted); font-size: 0.85rem;">123 Purpose Plaza, Innovation District<br>New York, NY 10001, USA</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4 style="font-size: 0.9rem;">Email</h4>
+                            <p style="color: var(--text-muted); font-size: 0.85rem;">contact@purpose.org<br>partners@purpose.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4 style="font-size: 0.9rem;">Phone</h4>
+                            <p style="color: var(--text-muted); font-size: 0.85rem;">+1 (212) 555-0198</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label style="font-size: 0.8rem; color: var(--text-muted);">First Name</label>
+                            <input type="text" placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label style="font-size: 0.8rem; color: var(--text-muted);">Last Name</label>
+                            <input type="text" placeholder="Doe">
+                        </div>
+                        <div class="form-group full">
+                            <label style="font-size: 0.8rem; color: var(--text-muted);">Email Address</label>
+                            <input type="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group full">
+                            <label style="font-size: 0.8rem; color: var(--text-muted);">Subject</label>
+                            <select>
+                                <option>Partnership Inquiry</option>
+                                <option>Donation Question</option>
+                                <option>Research Collaboration</option>
+                                <option>Press & Media</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label style="font-size: 0.8rem; color: var(--text-muted);">Message</label>
+                            <textarea rows="5" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full" style="margin-top: 1rem;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

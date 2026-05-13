@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background-image: url('about_hero_bg.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(5, 6, 15, 0.6);
+        }
+        .page-hero .container { position: relative; z-index: 1; }
+        .about-section { padding: 8rem 0; }
+        .about-grid-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .info-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 24px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="hero-badge fade-in">Our Story</div>
+            <h1 class="hero-title fade-in">Driven by <span class="text-gradient">Purpose.</span></h1>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid-content reveal">
+                <div>
+                    <h2 class="section-title">Who We <span>Are</span></h2>
+                    <p>Founded on the belief that meaningful change requires a multi-dimensional approach, Purpose Enterprise operates at the intersection of humanitarian aid, academic excellence, and scientific innovation.</p>
+                    <p>We are a global collective of researchers, educators, and social workers dedicated to solving the most complex challenges of our time. From eradicating poverty in rural communities to developing sustainable technologies for the future, our work is guided by data and fueled by compassion.</p>
+                </div>
+                <div class="info-card">
+                    <h3 style="margin-bottom: 1rem;">Our History</h3>
+                    <p style="color: var(--text-muted);">Starting as a small research initiative in 2015, Purpose has grown into a worldwide organization with presence in 40+ countries. Our evolution reflects the growing need for evidence-based charity and accessible high-level education.</p>
+                </div>
+            </div>
+
+            <div class="mission-vision reveal">
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>A world where every individual has access to the resources, knowledge, and support they need to thrive in a sustainable environment.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>To empower global communities through strategic humanitarian intervention, world-class educational programs, and groundbreaking scientific research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="charity.html">Charity</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our monthly impact report.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

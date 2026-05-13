@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Projects | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .projects-hero {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--dark-gradient);
+            position: relative;
+        }
+        .projects-filter {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+        .filter-btn {
+            padding: 0.6rem 1.5rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        .project-wide-card {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        .project-wide-card:hover {
+            transform: scale(1.02);
+            border-color: var(--primary);
+        }
+        .project-img {
+            background: var(--indigo-gradient);
+            height: 300px;
+        }
+        .project-info {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="projects-hero">
+        <div class="container" style="text-align: center;">
+            <span class="hero-badge fade-in">Portfolio</span>
+            <h1 class="hero-title fade-in">Global <span class="text-gradient">Initiatives.</span></h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="projects-filter reveal">
+                <button class="filter-btn active">All Projects</button>
+                <button class="filter-btn">Charity</button>
+                <button class="filter-btn">Education</button>
+                <button class="filter-btn">Research</button>
+            </div>
+
+            <div class="projects-list">
+                <div class="project-wide-card reveal">
+                    <div class="project-img" style="background-image: url('pillar_charity.png'); background-size: cover;"></div>
+                    <div class="project-info">
+                        <span class="hero-badge" style="font-size: 0.7rem;">Africa</span>
+                        <h3 style="margin: 1rem 0;">Turkana Solar Grid</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Powering schools and healthcare clinics with sustainable solar energy systems across North Turkana.</p>
+                        <a href="#" class="text-link">View Case Study</a>
+                    </div>
+                </div>
+                <div class="project-wide-card reveal" style="animation-delay: 0.1s">
+                    <div class="project-img" style="background-image: url('pillar_research.png'); background-size: cover;"></div>
+                    <div class="project-info">
+                        <span class="hero-badge" style="font-size: 0.7rem;">Global</span>
+                        <h3 style="margin: 1rem 0;">Project Graphene</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">A worldwide research collaboration to develop low-cost, high-efficiency water filtration technology.</p>
+                        <a href="#" class="text-link">Scientific Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer copied from index -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Organization</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

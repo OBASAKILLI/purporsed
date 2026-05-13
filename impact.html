@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Impact | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background-image: url('enterprise_hero_bg.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(5, 6, 15, 0.85);
+        }
+        .page-hero .container { position: relative; z-index: 1; }
+        .section-padding { padding: 8rem 0; }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        .impact-metric {
+            text-align: center;
+            padding: 3rem;
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+        }
+        .metric-num {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        .case-study {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 6rem;
+            align-items: center;
+        }
+        .case-img {
+            border-radius: 32px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+        }
+        .case-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="hero-badge fade-in">Global Footprint</div>
+            <h1 class="hero-title fade-in">Measuring <span class="text-gradient">Success.</span></h1>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+                <h2 class="section-title">A Legacy of <span>Change</span></h2>
+                <p>We measure our success not by the funding we receive, but by the tangible improvements in the quality of life for the communities we serve.</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-metric reveal">
+                    <div class="metric-num">50M+</div>
+                    <div class="stat-label">Lives Impacted</div>
+                </div>
+                <div class="impact-metric reveal" style="animation-delay: 0.1s">
+                    <div class="metric-num">40+</div>
+                    <div class="stat-label">Countries Reach</div>
+                </div>
+                <div class="impact-metric reveal" style="animation-delay: 0.2s">
+                    <div class="metric-num">12k+</div>
+                    <div class="stat-label">Schools Built</div>
+                </div>
+                <div class="impact-metric reveal" style="animation-delay: 0.3s">
+                    <div class="metric-num">500+</div>
+                    <div class="stat-label">Scientific Hubs</div>
+                </div>
+            </div>
+
+            <div class="case-study reveal">
+                <div class="case-img">
+                    <img src="pillar_charity.png" alt="Community Impact">
+                </div>
+                <div>
+                    <h2 class="section-title">Case Study: <span>Turkana Project</span></h2>
+                    <p style="margin-bottom: 2rem;">In one of the most arid regions of East Africa, Purpose implemented a holistic solution combining deep-well drilling, solar irrigation, and digital school infrastructure. Within 18 months, local food production increased by 300% and school enrollment rose by 85%.</p>
+                    <a href="#" class="btn btn-primary">Read Full Report</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="charity.html">Charity</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our monthly impact report.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Empowerment | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background-image: url('pillar_education.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(5, 6, 15, 0.75);
+        }
+        .page-hero .container { position: relative; z-index: 1; }
+        .section-padding { padding: 8rem 0; }
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+        .program-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 32px;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+        .program-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .scholarship-ticker {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 24px;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-left: 4px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="hero-badge fade-in">Academic Excellence</div>
+            <h1 class="hero-title fade-in">Knowledge is <span class="text-gradient">Power.</span></h1>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+                <h2 class="section-title">Empowering the <span>Future</span></h2>
+                <p>We believe that education is the ultimate equalizer. Purpose Enterprise provides the infrastructure and financial support needed to unlock the potential of students worldwide.</p>
+            </div>
+
+            <div class="edu-grid">
+                <div class="program-card reveal">
+                    <div class="program-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div>
+                        <h3>Digital Literacy Hubs</h3>
+                        <p>Establishing modern computer labs and high-speed internet in developing regions to bridge the digital divide.</p>
+                    </div>
+                </div>
+                <div class="program-card reveal" style="animation-delay: 0.1s">
+                    <div class="program-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div>
+                        <h3>Teacher Training</h3>
+                        <p>Professional development programs for educators, focusing on modern pedagogy and STEM integration.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scholarship-ticker reveal">
+                <h3>Global Scholarship Program 2026</h3>
+                <p>We are proud to announce 500 new full-ride scholarships for students pursuing degrees in Environmental Science, Public Health, and Information Technology. Applications open August 2026.</p>
+                <a href="#" class="text-link" style="margin-top: 1rem;">View Eligibility Criteria <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="charity.html">Charity</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our monthly impact report.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

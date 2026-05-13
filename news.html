@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .news-hero {
+            padding: 10rem 0 5rem;
+            background: var(--dark-gradient);
+            text-align: center;
+        }
+        .featured-news {
+            margin-bottom: 6rem;
+        }
+        .featured-news-card {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            overflow: hidden;
+        }
+        .featured-news-img {
+            height: 450px;
+            background: var(--indigo-gradient);
+        }
+        .featured-news-content {
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .news-sidebar {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+        }
+        .category-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        .category-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .category-list li:hover { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="news-hero">
+        <div class="container">
+            <span class="hero-badge">Insights Hub</span>
+            <h1 class="hero-title">Latest <span class="text-gradient">Insights.</span></h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="featured-news reveal">
+                <div class="featured-news-card">
+                    <div class="featured-news-img" style="background-image: url('enterprise_hero_bg.png'); background-size: cover;"></div>
+                    <div class="featured-news-content">
+                        <span class="hero-badge" style="background: var(--primary); color: white;">Featured</span>
+                        <h2 style="margin: 1.5rem 0; line-height: 1.2;">Scaling Impact: The Future of Global Education in 2026</h2>
+                        <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Exploring how AI and decentralized learning systems are reshaping education in emerging markets.</p>
+                        <a href="#" class="btn btn-primary">Read Article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-sidebar">
+                <div class="news-grid" style="grid-template-columns: 1fr 1fr;">
+                    <article class="news-card reveal">
+                        <div class="news-img"></div>
+                        <div class="news-content">
+                            <span class="hero-badge" style="font-size: 0.7rem;">Research</span>
+                            <h4 style="margin: 1rem 0;">Advancing Biotech for Public Health</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">How our latest findings are helping prevent seasonal outbreaks.</p>
+                            <a href="#" class="text-link">Read More</a>
+                        </div>
+                    </article>
+                    <article class="news-card reveal">
+                        <div class="news-img" style="background: var(--emerald-gradient)"></div>
+                        <div class="news-content">
+                            <span class="hero-badge" style="font-size: 0.7rem;">Community</span>
+                            <h4 style="margin: 1rem 0;">New Hub Opening in Nairobi</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Purpose expands its presence in East Africa with a new innovation center.</p>
+                            <a href="#" class="text-link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="reveal">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><span>Global Health</span> <span>(12)</span></li>
+                        <li><span>Innovation</span> <span>(8)</span></li>
+                        <li><span>Education</span> <span>(15)</span></li>
+                        <li><span>Case Studies</span> <span>(5)</span></li>
+                        <li><span>Impact Reports</span> <span>(3)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Organization</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

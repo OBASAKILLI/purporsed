@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Innovation | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background-image: url('pillar_research.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(5, 6, 15, 0.8);
+        }
+        .page-hero .container { position: relative; z-index: 1; }
+        .section-padding { padding: 8rem 0; }
+        .publication-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .pub-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            padding: 2rem 3rem;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .pub-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--primary);
+        }
+        .pub-tag {
+            padding: 0.4rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="donate.html" class="btn btn-secondary">Support Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="hero-badge fade-in">Scientific Lab</div>
+            <h1 class="hero-title fade-in">Solving for <span class="text-gradient">Tomorrow.</span></h1>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+                <h2 class="section-title">Evidence-Based <span>Solutions</span></h2>
+                <p>Our research hubs are multidisciplinary labs where scientists and social experts collaborate to develop data-driven strategies for global health, climate resilience, and economic equity.</p>
+            </div>
+
+            <h3 class="reveal">Featured Publications</h3>
+            <div class="publication-grid">
+                <div class="pub-card reveal">
+                    <div>
+                        <span class="pub-tag">Global Health</span>
+                        <h4 style="margin: 1rem 0 0.5rem;">The impact of mobile healthcare in sub-Saharan Africa.</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Published: March 2026 · Authors: Dr. Elena R., Prof. Liam K.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="padding: 0.6rem 1.2rem;">Read Paper</a>
+                </div>
+                <div class="pub-card reveal" style="animation-delay: 0.1s">
+                    <div>
+                        <span class="pub-tag">Sustainability</span>
+                        <h4 style="margin: 1rem 0 0.5rem;">Decentralized water purification: A cost-benefit analysis.</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Published: January 2026 · Authors: Sarah M., et al.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="padding: 0.6rem 1.2rem;">Read Paper</a>
+                </div>
+                <div class="pub-card reveal" style="animation-delay: 0.2s">
+                    <div>
+                        <span class="pub-tag">Economics</span>
+                        <h4 style="margin: 1rem 0 0.5rem;">Digital literacy as a catalyst for rural economic growth.</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Published: November 2025 · Authors: Dr. Kevin J.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline" style="padding: 0.6rem 1.2rem;">Read Paper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span class="logo-text">PURPOSE</span>
+                </a>
+                <p>Building a brighter future through evidence-based action and compassionate support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="charity.html">Charity</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our monthly impact report.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

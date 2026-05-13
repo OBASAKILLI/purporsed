@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us | Purpose Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .donate-hero {
+            padding: 10rem 0 5rem;
+            background: var(--dark-gradient);
+            text-align: center;
+        }
+        .donation-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .amount-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .amount-card:hover, .amount-card.selected {
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.05);
+            transform: translateY(-5px);
+        }
+        .amount-val {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+        }
+        .donate-form {
+            max-width: 600px;
+            margin: 6rem auto;
+            background: var(--bg-surface);
+            padding: 4rem;
+            border-radius: 32px;
+            border: 1px solid var(--glass-border);
+        }
+    </style>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">PURPOSE</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="donate-hero">
+        <div class="container">
+            <span class="hero-badge">Empower Change</span>
+            <h1 class="hero-title">Support Our <span class="text-gradient">Mission.</span></h1>
+            <p class="hero-subtitle">Every contribution, no matter the size, helps us build a more equitable world.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="donation-options">
+                <div class="amount-card reveal">
+                    <div class="amount-val">$50</div>
+                    <p>Can provide clean water for a family for one year.</p>
+                </div>
+                <div class="amount-card reveal" style="animation-delay: 0.1s">
+                    <div class="amount-val">$250</div>
+                    <p>Supports a student's educational materials for a semester.</p>
+                </div>
+                <div class="amount-card reveal" style="animation-delay: 0.2s">
+                    <div class="amount-val">$1000</div>
+                    <p>Funds a week of groundbreaking lab research.</p>
+                </div>
+            </div>
+
+            <div class="donate-form reveal">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Donation Details</h3>
+                <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <input type="text" placeholder="Full Name" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); padding: 1rem; border-radius: 12px; color: white;">
+                    <input type="email" placeholder="Email Address" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); padding: 1rem; border-radius: 12px; color: white;">
+                    <div style="display: flex; gap: 1rem;">
+                        <input type="text" placeholder="MM/YY" style="flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); padding: 1rem; border-radius: 12px; color: white;">
+                        <input type="text" placeholder="CVV" style="flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); padding: 1rem; border-radius: 12px; color: white;">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Complete Donation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Purpose Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
